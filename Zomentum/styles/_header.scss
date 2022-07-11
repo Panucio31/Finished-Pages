@@ -1,0 +1,37 @@
+.nav__bar {
+   
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    .nav__logo {
+        width: 200px;
+        height: 29px;
+    }
+    .nav__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .menu__list {
+            display:none;
+        }
+        .demo_btn {
+            display: none;
+        }
+        .login {
+            display: none;
+        }
+        
+        .nav__menu-burger {
+            display: block;
+
+            img {
+            width: 29px;
+            height: 29px;
+            }
+        }
+    }
+
+}

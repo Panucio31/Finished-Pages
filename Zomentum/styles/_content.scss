@@ -1,0 +1,118 @@
+@mixin h4-paragraph {
+    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
+
+.properties__section {
+    background: rgba(0, 255, 133, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    .properties__title {
+
+        h1 {
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+        }
+    }
+    .properties__subtitle {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+        .properties__subtitle-content {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            h4 {
+               @include h4-paragraph;
+               text-align: center;
+            }
+        }
+            
+    }
+}
+
+.main__container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    .main__program {
+        margin: 30px 0;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        
+
+        .img_program {
+            display: flex;
+            justify-content: center;
+        }
+
+        h2 {
+            font-size: 28px;
+            line-height: 1.5;
+            text-align: center;
+            color: #181818;
+
+        }
+        h4 {
+            @include h4-paragraph;
+            text-align: center;
+            color: #000C2D;
+            
+        }
+    }
+
+    .main__program:nth-child(even) {
+        width: 50%;
+        display: flex;
+        margin: 0;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+        
+    }
+
+    .text_program {
+        .sign_up-now {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        a {
+            text-decoration: none;
+            color: #2F70FE;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+       
+    }
+
+    
+
+    
+}
+
